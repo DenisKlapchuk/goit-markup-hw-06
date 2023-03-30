@@ -713,10 +713,51 @@ img {
 .modal-form {
     margin-top: 16px
 }
+
+.input-wrap{
+    position: relative;
+}
+
 .modal-input {
     width: 100%;
     height: 58px;
     border: 1px solid rgba(46, 47, 66, 0.4); 
     border-radius:4px;
+    padding-left: 38px;
+    outline: transparent;
+}
+
+.modal-field{
     margin-bottom: 8px;
+}
+
+.modal-input-icon{
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.modal-input:focus{
+    border-color: rgba(77, 90, 229, 1);
+}
+
+.modal-input:focus + .modal-input-icon{
+    fill: rgba(77, 90, 229, 1);
+}
+.modal-label-text {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(46, 47, 66, 0.4);
+}
+
+.modal-textarea {
+    width: 360px;
+    height: 138px;
+    border: rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
+    resize: none;
 }
