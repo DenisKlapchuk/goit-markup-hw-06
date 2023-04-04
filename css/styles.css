@@ -888,11 +888,14 @@ img {
     color: rgba(255, 255, 255, 0.6);
 }
 .footer-input button {
+    width: 165px;
+    height: 40px;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 8px 24px;
-    gap: 16px;
+    gap:16px;
     background-color: #4D5AE5;
     border-radius: 4px;
     color: #FFFFFF;
