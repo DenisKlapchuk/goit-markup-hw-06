@@ -681,6 +681,7 @@ img {
 
 .close-btn {
     position: absolute;
+    display: flex;
     top: 24px;
     right: 24px;
     justify-content: center;
@@ -691,15 +692,20 @@ img {
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background: #E7E9FC;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close {
+    color: rgba(46, 47, 66, 1);
 }
 
 .close-btn:hover {
-    color: var(--secondary-color);
+    fill: #FFFFFF;
     background-color: #404BBF;
 }
 .close-btn:focus {
-    color: var(--secondary-color);
+    fill: #FFFFFF;
     background-color: #404BBF;
 }
 
@@ -707,13 +713,9 @@ img {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: transform 250ms  cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close {
-    color: rgba(46, 47, 66, 1);
-    cursor: pointer;
-}
+
 
 
 .no-scroll {
